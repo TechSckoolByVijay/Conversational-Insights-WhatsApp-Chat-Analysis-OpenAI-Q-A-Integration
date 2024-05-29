@@ -286,34 +286,8 @@ def perform_query_operation():
     index_client = SearchIndexClient(endpoint=endpoint, credential=credential)
     search_client = SearchClient(endpoint=endpoint, index_name=index_name, credential=credential)
 
-    # Example query
-    #question = "What is the main topic of discussions in this group?"
-    #question = "What are the topics of interest of Pradeep?"
-    #question = "Which participants seems to supporter of Modi?"
-    #question = "Pradeep likes or dislikes bjp?"
-    #question = "which political party does Pradeep supports?"
-    #question = "Name of the participants of the chat??"
-    #question = "story behind naming Arka?"
-    
-    #question = "who talks about BY?"
-    
-    #question = "Gokul support Modi or against him??"
-    #question = "Tell me an instance where Gokul is seen against Modi??"
-    # question = "Arka support Modi or against him??" 
-    # question = "JDA Pradeep support Modi or against him??"    
-    # question = "Sanoop is Modi lover. yes or no??"  
-    # question= "Which of the group members has the most volatile political opinion?" 
-    #--> Answer: Based on the messages provided, it is difficult to determine which group member has the most volatile political opinion as different members express their opinions at different times and on different topics. However, it can be noted that some members hold strong opinions on certain issues and are not hesitant to express them.
 
-    #question= "give me instances where most volatile political discussion happened. Summarize it?" 
-    #question = "who seems to be pro Modi and BJP?"
-    #question = "create a whitepaper on the opinions expressed by ARKA in the area of cricket"
-    #question= "where does Gokul live?" 
-    #question = "among the various participants of this group, who are pro-BJP and who are anti-BJP. Give me names only?"
-    #question = "Based on coversastions, what is the openion of group members about Arvind Kejriwal "
-    #question = "What is the food preferences of participants of this group?"
     #question= "what is the probabality according to discussion here, that Modi works for BJP?"
-    question = "why does Arka appreciates Vijay?"
     answer = answer_query(search_client, question)
     print("Question:", question)
     print("Answer:", answer)
